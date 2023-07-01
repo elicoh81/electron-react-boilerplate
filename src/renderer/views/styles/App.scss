@@ -14,9 +14,6 @@ body {
   );
   font-family: sans-serif;
   overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -60,3 +57,25 @@ a:hover {
   align-items: center;
   margin: 20px 0;
 }
+
+.nav-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+.nav-container {
+    li.nav-item{
+        cursor:pointer ;
+        a{
+            color: blue;
+        }
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
