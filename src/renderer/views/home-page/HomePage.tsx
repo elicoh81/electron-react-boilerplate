@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/home-page.scss';
 
 export default function HomePage() {
+    const [counter, setCounter] = React.useState(0);
+
+    useEffect(() => {
+        setInterval(() => setCounter((c) => c + 1), 1000);
+    }, []);
     return (
         <div id="home-page">
+            <div>{counter}</div>
             <form>
                 <label htmlFor="inputField">
-                    Name:
+                    Name--bla:
                     <input type="text" id="inputField" name="name" />
                 </label>
                 <label htmlFor="inputField">
